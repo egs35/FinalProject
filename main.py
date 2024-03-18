@@ -19,10 +19,10 @@ def initialize_database():
 
 # Function to add a new restaurant to the database
 def add_restaurant(name, rating, review, price, location):
-    name = input("Enter the name of the new restaurant: ")
-    rating = input("Enter the rating of the restaurant: ")
+    name = input("Enter the name of the restaurant: ")
+    rating = input("Enter the rating of the restaurant out of 5 stars: ")
     review = input("Enter a review for the restaurant: ")
-    price = input("Enter the price range of the restaurant: ")
+    price = input("Enter the price range of the restaurant ($, $$, $$$): ")
     location = input("Enter the location of the restaurant: ")
 
     conn = sqlite3.connect('restaurants.db')
@@ -33,6 +33,7 @@ def add_restaurant(name, rating, review, price, location):
     ''', (name, rating, review, price, location))
     conn.commit()
     conn.close()
+    quit()  
 
 # Call initialize_database function
 initialize_database()
