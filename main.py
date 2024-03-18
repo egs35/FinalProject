@@ -41,6 +41,7 @@ initialize_database()
 # Add some restaurants
 add_restaurant("Stackd", "4.5/5", "I love the build your own burgers!", "$$", "Corner of Forbes & Oakland")
 add_restaurant("Mount Everest Sushi", "5/5", "Best sushi in oakland YUM", "$$", "Oakland")
+add_restaurant("Chipotle", "4.5/5", "Extremely filling and delicious!", "$$", "Oakland")
 
 # # Function to remove a restaurant from the database by name
 # def remove_restaurant_by_name(name):
