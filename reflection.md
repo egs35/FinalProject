@@ -6,3 +6,10 @@ Awareness of data types and type checking.
 Understanding of class and object-oriented programming principles.
 Use of property decorators for data encapsulation and validation.
 Use the list below to help you explore concepts you can discuss in the report reflection.md
+
+Main points: 
+sqlite3
+initalize database 
+take user input 
+connect user input to database 
+print all restaurants 
