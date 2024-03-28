@@ -20,7 +20,7 @@ def initialize_database():
 
 # Function to add a new restaurant to the database
 def add_restaurant(name, rating, review, price, location):
-    name = input("Enter the name of the restaurant: ")
+    name = input("Enter the name of the restaurant: ").lower()
     rating_str = input("Enter the rating of the restaurant out of 5 stars: ")
     try:
         rating = int(rating_str)
@@ -35,7 +35,7 @@ def add_restaurant(name, rating, review, price, location):
             break
         else:
             print("invalid price range. Please enter $, $$, or $$$.")
-    location = input("Enter the location of the restaurant: ")
+    location = input("Enter the location of the restaurant: ").lower()
 
     conn = sqlite3.connect('restaurants.db')
     cursor = conn.cursor()
