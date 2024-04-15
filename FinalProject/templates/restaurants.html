@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption</title>
+</head>
+<body>
+    <h1>Restaurants</h1>
+    <ul>
+        {% for res in restaurants %}
+            <li><a href="{{ url_for('restaurant_review_view', name=res.name) }}">{{ res.name }}</a>
+            
+            {{res.rating}}
+            {{res.review}}
+            {{res.price}}
+            {{res.location}}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
